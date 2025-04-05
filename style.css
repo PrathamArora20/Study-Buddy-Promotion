@@ -1,0 +1,239 @@
+/* Modern Stylish Theme Update - With Home Page Enhancements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to bottom right, #f0f4ff, #ffffff);
+    color: #222;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+  
+  .navbar {
+    background: #ffffffcc;
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 1rem;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1a1aff;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #1a1aff;
+  }
+  
+  .header {
+    background: linear-gradient(to bottom, #1a1aff, #6366f1);
+    color: white;
+    text-align: center;
+    padding: 6rem 1rem 5rem;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    animation: fadeInUp 1s ease;
+  }
+  
+  .header h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+  
+  .header p {
+    font-size: 1.25rem;
+    margin-top: 0.75rem;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 5rem 1rem 3rem;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    background: linear-gradient(to right, #1a1aff, #6366f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 1rem;
+  }
+  
+  .cta {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  
+  .button {
+    padding: 1rem 2rem;
+    background: linear-gradient(90deg, #1a1aff, #6366f1);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-size: 1.1rem;
+  }
+  
+  .button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+  }
+  
+  .feature {
+    background: white;
+    border-radius: 14px;
+    padding: 2rem;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+  
+  .feature h3 {
+    color: #1a1aff;
+    margin-bottom: 0.75rem;
+    font-size: 1.4rem;
+  }
+  
+  .demo {
+    margin-top: 4rem;
+    text-align: center;
+  }
+  
+  .demo h2 {
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    color: #1a1aff;
+  }
+  
+  .video-grid {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .video-grid video {
+    max-width: 100%;
+    width: 480px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  }
+  
+  footer {
+    background: #000;
+    color: #ccc;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .tabs {
+    margin-top: 4rem;
+  }
+  
+  .tab-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .tab-btn {
+    padding: 0.75rem 1.5rem;
+    background: #e0e7ff;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  .tab-btn.active {
+    background: #1a1aff;
+    color: white;
+  }
+  
+  .tab-content {
+    display: none;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+    text-align: center;
+  }
+  
+  .tab-content.active {
+    display: block;
+    animation: fadeIn 0.4s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
